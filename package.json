@@ -1,0 +1,34 @@
+{
+  "name": "nytime-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "moment": "^2.21.0",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-materialize": "^2.1.2",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.11.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

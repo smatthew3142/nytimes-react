@@ -6,7 +6,7 @@ var path = require('path');
 var routes = require("./routes");
 var app = express();
 
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 4000;
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));

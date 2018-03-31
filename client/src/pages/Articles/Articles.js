@@ -30,6 +30,7 @@ export default class Articles extends Component {
     .then(results => {
       this.setState({savedArticles: results.data})
     })
+    .catch(err => console.log(err));
   };
 
   deleteArticle = id => {

@@ -6,7 +6,7 @@ This assignment was completed for Rutgers Coding Bootcamp.
 The assignment required us to create an app with MongoDB and React that will let users search and save articles from the New York Times.
 
 ## Getting Started
-  * 
+  *  https://hidden-lowlands-59823.herokuapp.com/
  
 ---
   

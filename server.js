@@ -6,13 +6,16 @@ var path = require('path');
 var routes = require("./routes");
 var app = express();
 
-var PORT = process.env.PORT || 4000;
+var PORT = process.env.PORT || 3001;
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
-app.use(express.static("client/build"));
+app.use(express.static(path.join(__dirname, "client/build")));
+app.get('/', function(req, res){
+	res.send('react app will go here..')
+})
 // Add routes, both API and view
 app.use(routes);
 
@@ -20,12 +23,7 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-
-process.env.MONGODB_URI || "mongodb://localhost/nytimes-react", 
-{
-  useMongoClient: true
-}
-
+  process.env.MONGODB_URI || "mongodb://localhost/nytimes-react"
 );
 
 // Start the API server

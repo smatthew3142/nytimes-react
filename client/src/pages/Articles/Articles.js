@@ -52,13 +52,13 @@ export default class Articles extends Component {
     }
 
     API.saveArticle(newArticle)
-    .then(results => {
-      let unsaved = this.state.results.filter(article => article.headline.main !== newArticle.title)
-      this.setState({results: unsaved})
-      })
-    .catch(err =>
-      console.log(err));
+    .then(res => this.loadArticles())
+        .catch(err => console.log(err));
+
+    
   }
+
+
 
 
   getArticles = query => {

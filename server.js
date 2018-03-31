@@ -12,18 +12,21 @@ var PORT = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static("client/build"));
 // Add routes, both API and view
 app.use(routes);
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
+mongoose.connect(
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytimes-react"
-mongoose.connect(MONGODB_URI, {
+process.env.MONGODB_URI || "mongodb://localhost/nytimes-react", 
+{
   useMongoClient: true
-});
+}
+
+);
 
 // Start the API server
 app.listen(PORT, function() {

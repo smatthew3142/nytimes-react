@@ -12,6 +12,11 @@
 	transition: transform .2s;
 }
 
+h1 {
+	font-family: 'Cormorant SC', serif;
+	font-size: 30px;
+}
+
 
 h4 {
 	font-family: 'Cormorant SC', serif;

@@ -247,7 +247,7 @@ export default class Articles extends Component {
                       url = {article.url}
                       synopsis = {article.synopsis}
                       date = {article.date}
-                      type = 'Remove from Saved'
+                      type = 'Remove'
                       onClick ={() => this.deleteArticle(article._id)}
                       />
                       )

@@ -6,7 +6,7 @@ export const FormBtn = props => {
   classes += ' ' + props.additional
   
   return (
-    <button {...props} className={classes}>
+    <button {...props} className={classes} >
       {props.children}
     </button>
   )

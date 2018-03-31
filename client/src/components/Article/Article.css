@@ -1,0 +1,29 @@
+.list-group h4 {
+
+	font-size: 24px;
+	color: #424242 ;
+	transition: 
+}
+
+.list-group h4:hover {
+
+	color: black;
+}
+
+.date {
+	font-family: 'Buda', cursive;
+	color: #424242 ;
+}
+
+.date:hover {
+
+	color: black;
+}
+
+.grow {
+	transition: transform .2s;
+}
+
+.grow:hover {
+	transform: scale(1.02);
+}

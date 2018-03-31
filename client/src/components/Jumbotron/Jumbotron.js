@@ -1,6 +1,6 @@
 import React from "react";
 import "./Jumbotron.css";
-import { Card, CardTitle } from "react-materialize";
+import { Card } from "react-materialize";
 
 
 export const Jumbotron = () => (

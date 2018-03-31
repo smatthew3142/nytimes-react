@@ -1,0 +1,43 @@
+.jumbotron {
+  padding-top: 75px;
+
+}
+
+.background {
+	position: relative;
+	background-image: url("./nytimes_copy.jpg");
+	background-size: 900px auto;
+	background-position: center; 
+	height: 200px;
+	transition: transform .2s;
+}
+
+
+h4 {
+	font-family: 'Cormorant SC', serif;
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 0px;
+
+}
+
+h5 {
+	font-family: 'Buda', cursive;
+	font-size: 18px;
+	margin-top: 0px;
+
+}
+
+.jumbotron a {
+	color: white;
+}
+
+.jumbotron a:hover {
+	color: black;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0px;
+    left: 16px;
+}

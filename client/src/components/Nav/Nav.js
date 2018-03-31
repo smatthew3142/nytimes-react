@@ -1,12 +1,14 @@
 import React from "react";
 import { Navbar, NavItem } from "react-materialize";
+import "./Nav.css";
 
 
 const Nav = () => (
 
-  <Navbar brand='New York Times News Search' href="/"  right style={{position: 'fixed'}}>
+  <Navbar className= "nav  grey darken-1" right style={{position: 'fixed', zIndex: 10}}>
+  <a href="/" className="brand-logo center">The New York Times Article Search</a>
   <NavItem href='/'>Home</NavItem>
-  <NavItem href='/savedArticles'>Saved Articles</NavItem>
+  <NavItem href='#savedArticleCard'>Saved Articles</NavItem>
 </Navbar>
 );
 
